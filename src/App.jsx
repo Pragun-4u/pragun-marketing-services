@@ -1,17 +1,12 @@
 // src/App.jsx
-import { useEffect } from "react";
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import EnquiryForm from "./components/EnquiryForm";
 import { motion } from "framer-motion";
+import EnquiryForm from "./components/EnquiryForm";
+import HeroSection from "./components/HeroSection";
 import LocationSection from "./components/LocationSection";
+import Navbar from "./components/Navbar";
 import VirtualSiteVisit from "./components/VirtualSiteVisit";
 
 function App() {
-  useEffect(() => {
-    document.title = "Godrej Horizon Wadala | Premium Real Estate";
-  }, []);
-
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}
