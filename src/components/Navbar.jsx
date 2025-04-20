@@ -1,7 +1,6 @@
 // src/components/Navbar.jsx
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Menu, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import React, { useState, useEffect } from "react";
 
 export default function Navbar() {
