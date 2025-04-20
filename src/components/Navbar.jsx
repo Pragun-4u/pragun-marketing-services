@@ -192,12 +192,22 @@ export default function Navbar() {
                 <>
                   <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-emerald-600 to-teal-700 rounded-md hover:from-emerald-700 hover:to-teal-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                     Menu
-                    <ChevronDownIcon
-                      className={`w-5 h-5 ml-2 -mr-1 text-white transition-transform ${
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      className={`size-6 ml-2 -mr-1 text-white transition-transform ${
                         open ? "transform rotate-180" : ""
                       }`}
-                      aria-hidden="true"
-                    />
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
                   </Menu.Button>
                   <Transition
                     as={React.Fragment}
