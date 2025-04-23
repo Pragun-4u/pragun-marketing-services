@@ -260,7 +260,7 @@ export default function HeroSection() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-3 sm:px-6 py-2 sm:py-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-md shadow-lg flex items-center transition-all duration-300 text-sm sm:text-base"
+                    className="px-3 sm:px-6 py-2 sm:py-3 bg-gray-500/80 hover:bg-white/30 backdrop-blur-sm text-white rounded-md shadow-lg flex items-center transition-all duration-300 text-sm sm:text-base"
                   >
                     <svg
                       className="h-4 w-4 sm:h-5 sm:w-5 mr-1 sm:mr-2"
