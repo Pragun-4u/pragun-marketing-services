@@ -13,14 +13,12 @@ function App() {
       <Navbar />
 
       <main>
-        {/* Hero Section with Video/Image Carousel */}
         <HeroSection />
 
         {/* Main Content - Adjusted to not clash with hero */}
         <div className="relative z-10 bg-white pt-16 sm:pt-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {/* Left Content Area (2/3 width on large screens) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -257,7 +255,6 @@ function App() {
                 </div>
               </motion.div>
 
-              {/* Right Sidebar - Sticky Form (1/3 width on large screens) */}
               <div className="hidden lg:block">
                 <div className="sticky top-24">
                   <motion.div
@@ -309,7 +306,6 @@ function App() {
         </div>
       </main>
 
-      {/* Mobile contact form (only visible on small screens) */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 p-4 z-20">
         <div className="flex justify-between items-center">
           <div>
