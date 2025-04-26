@@ -50,8 +50,8 @@ export default function Navbar() {
           >
             <a href="#" className="flex items-center">
               <div className="flex items-center">
-                <div className="h-10 w-10 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-md flex items-center justify-center">
-                  <svg
+                <div className="h-10 w-10  rounded-md flex items-center justify-center">
+                  {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6 text-white"
                     fill="none"
@@ -64,7 +64,9 @@ export default function Navbar() {
                       strokeWidth={2}
                       d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                     />
-                  </svg>
+                  </svg> */}
+
+                  <img src="https://www.housebazaar.com/godrej-horizon/assets/img/logo_hb_new.svg" />
                 </div>
                 <div className="ml-3">
                   <div className="text-xl font-bold tracking-tight bg-gradient-to-r from-emerald-600 to-teal-700 bg-clip-text text-transparent">
@@ -195,15 +197,15 @@ export default function Navbar() {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       stroke="currentColor"
                       className={`size-6 ml-2 -mr-1 text-white transition-transform ${
                         open ? "transform rotate-180" : ""
                       }`}
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="m19.5 8.25-7.5 7.5-7.5-7.5"
                       />
                     </svg>

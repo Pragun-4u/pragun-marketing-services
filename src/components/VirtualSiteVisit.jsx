@@ -1,5 +1,5 @@
 // src/components/VirtualSiteVisit.jsx
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function VirtualSiteVisit() {
@@ -52,6 +52,14 @@ export default function VirtualSiteVisit() {
   // Get active tour option
   const activeTour = tourOptions.find((option) => option.id === activeTab);
 
+  useEffect(() => {
+    if (showModal?.modalStatus) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [showModal?.modalStatus]);
+
   return (
     <>
       <h2 className="text-3xl font-bold text-gray-800 mb-6">
@@ -81,7 +89,7 @@ export default function VirtualSiteVisit() {
                   modalStatus: true,
                   component: (
                     <>
-                      <div className="aspect-video w-full mx-auto h-3/4 bg-black rounded-lg overflow-hidden shadow-2xl">
+                      <div className="aspect-video w-3/4 md:w-1/2 mx-auto h-full md:h-1/2  bg-black rounded-lg overflow-hidden shadow-2xl">
                         <iframe
                           className="w-full h-full"
                           src={`https://www.youtube.com/embed/${activeTour.videoId}?autoplay=1&mute=1&rel=0`}
@@ -91,7 +99,7 @@ export default function VirtualSiteVisit() {
                           allowFullScreen
                         ></iframe>
                       </div>
-                      <div className="mt-4 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                      <div className="md:w-1/2 mx-auto md:h-1/2 mt-4 bg-white/10 backdrop-blur-sm rounded-lg p-4">
                         <h3 className="text-xl font-bold text-white">
                           {activeTour.name}
                         </h3>
